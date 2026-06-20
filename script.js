@@ -62,6 +62,12 @@ const button = document.querySelector('.button')
 
 button.addEventListener("click", () => {
     containerTwo.classList.toggle("toggle")
+
+    if (containerTwo.classList.contains("toggle")) {
+        button.textContent = "Read Less";
+    } else {
+        button.textContent = "Read More";
+    }
 });
 
 // Service Read More 
@@ -70,6 +76,11 @@ const buttons = document.querySelector('.buttons')
 
 buttons.addEventListener("click", () => {
     containerService.classList.toggle("toggle")
+     if (containerService.classList.contains("toggle")) {
+        buttons.textContent = "Read Less";
+    } else {
+        buttons.textContent = "Read More";
+    }
 });
 
 // PHP Service Read More
@@ -78,4 +89,9 @@ const button_php = document.querySelector('.button_php')
 
 button_php.addEventListener("click", () => {
     phpService.classList.toggle("toggle")
+    if (phpService.classList.contains("toggle")) {
+        button_php.textContent = "Read Less";
+    } else {
+        button_php.textContent = "Read More";
+    }
 });
